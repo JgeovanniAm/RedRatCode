@@ -1,4 +1,4 @@
-const canvasAnimation = (function(){
+const canvasAnimation = (function () {
 	const canvas = document.querySelector('.contex-js');
 	const canvasContext = canvas.getContext('2d');
 	function setSize() {
@@ -8,39 +8,39 @@ const canvasAnimation = (function(){
 	window.addEventListener('resize', setSize)
 	setSize();
 	class object {
-		constructor(x, y, r, v) {
+		constructor(x, y, r) {
 			this.x = x;
 			this.y = y;
 			this.r = r;
-			this.v = v;
+			this.dx =  Math.random() * 3.5;
+			this.dy =  Math.random() * 4.5;
 		}
 		draw() {
 			canvasContext.beginPath()
-			canvasContext.arc(this.x, this.y, 20,  this.r, false);
+			canvasContext.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
 			canvasContext.fillStyle = "#014a74";
 			canvasContext.fill();
 			canvasContext.closePath();
 		}
 		move() {
-			this.x += this.v;
-			this.y += this.v;
-			if(this.y + this.r > window.innerHeight || this.y  - this.r < 200 ){
-        this.y =-this.v
-      } 
-			if(this.x + this.r > window.innerWidth || this.x - this.r < 220 ){
-        this.x =-this.v
-      } 
+			this.x += this.dx;
+			this.y += this.dy;
+			if (this.y + this.r > canvas.height || this.y - this.r <0) {
+				this.dy = -this.dy
+			}
+			if (this.x + this.r > canvas.width  || this.x - this.r < 0) {
+				this.dx = -this.dx
+			}
 			this.draw()
 		}
 	}
 
 	function create() {
 		let array = [];
-		for (let i = 0; i <= 4; i++) {
-			let x = Math.random() * window.innerWidth;
-			let y = Math.random() * window.innerHeight;
-			let velocity = Math.random() * 5;
-			let character = new object(x, y, 0.5, velocity);
+		for (let i = 0; i < 4; i++) {
+			let x = Math.random() *  canvas.width;
+			let y = Math.random() *  canvas.height;
+			let character = new object(x, y, 50);
 			array.push(character);
 		}
 		return item = array;
