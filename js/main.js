@@ -12,8 +12,8 @@ const canvasAnimation = (function () {
 			this.x = x;
 			this.y = y;
 			this.r = r;
-			this.dx =  Math.random() * 3.5;
-			this.dy =  Math.random() * 4.5;
+			this.dx =  Math.random() * 2;
+			this.dy =  Math.random() * 2.5;
 		}
 		draw() {
 			canvasContext.beginPath()
@@ -23,14 +23,14 @@ const canvasAnimation = (function () {
 			canvasContext.closePath();
 		}
 		move() {
-			this.x += this.dx;
-			this.y += this.dy;
 			if (this.y + this.r > canvas.height || this.y - this.r <0) {
 				this.dy = -this.dy
 			}
 			if (this.x + this.r > canvas.width  || this.x - this.r < 0) {
 				this.dx = -this.dx
 			}
+			this.x += this.dx;
+			this.y += this.dy;
 			this.draw()
 		}
 	}
@@ -50,9 +50,9 @@ const canvasAnimation = (function () {
 	function IteracionDraw() {
 		requestAnimationFrame(IteracionDraw)
 		canvasContext.clearRect(0, 0, canvas.width, canvas.height);
+		let i = 0;
 		newarray.forEach(element => {
-			//console.log(element)
-			element.move()
+			element.move();
 		});
 	}
 	IteracionDraw()
