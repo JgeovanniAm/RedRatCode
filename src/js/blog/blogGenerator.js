@@ -1,7 +1,7 @@
 const generate = function(array, parent) {
   function append(elementStr, inner) {
     let element = document.createElement(elementStr);
-    element.innerText = inner;
+    element.innerText = inner || '';
     parent.appendChild(element);
     return element;
   }
@@ -11,7 +11,7 @@ const generate = function(array, parent) {
         append('h3', o.title);
       }
       if (o.image) {
-        append('img').src = o.image;
+        append('i').style.setProperty('background-image', `url(${o.image})`);
       }
       if (o.text) {
         append('p', o.text);
