@@ -31,18 +31,4 @@ const generate = function(array, parent) {
     elements: elements
   };
 };
-// generate(
-//   [
-//     {
-//       title: `Hello World`,
-//       text: `Lorem ipsum dolor sit amet consectetur 
-//             adipisicing elit. Earum, alias deleniti tempore 
-//             omnis sint minima recusandae at, non obcaecati 
-//             molestiae necessitatibus? Unde id doloribus vel, 
-//             laboriosam eaque fugiat sit nesciunt.`,
-//       image: `https://images.pexels.com/photos/1418354/pexels-photo-1418354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
-//       link: `hello Alisson - https://www.pexels.com/`
-//     }
-//   ],
-//   blog
-// ).elements();
+
