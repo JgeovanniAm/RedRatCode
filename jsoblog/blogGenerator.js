@@ -1,17 +1,18 @@
 const generate = function(array, parent) {
   function append(elementStr, inner) {
     let element = document.createElement(elementStr);
-    element.innerText = inner;
+    element.innerText = inner || '';
     parent.appendChild(element);
     return element;
   }
   function elements() {
     array.forEach(o => {
       if (o.title) {
-        append('h3', o.title);
+        let title = append('h3', o.title);
+        title.id = o.title.replace(/ /gi, '');
       }
       if (o.image) {
-        append('img').src = o.image;
+        append('i').style.setProperty('background-image', `url(${o.image})`);
       }
       if (o.text) {
         append('p', o.text);
@@ -31,14 +32,4 @@ const generate = function(array, parent) {
     elements: elements
   };
 };
-generate(
-  [
-    {
-      title: `Hello World`,
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, alias deleniti tempore omnis sint minima recusandae at, non obcaecati molestiae necessitatibus? Unde id doloribus vel, laboriosam eaque fugiat sit nesciunt.`,
-      image: `https://images.pexels.com/photos/2016550/pexels-photo-2016550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
-      link: `hello Alisson - https://www.pexels.com/`
-    },
-  ],
 
-).elements();

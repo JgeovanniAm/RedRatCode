@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, labore earum, possimus ea dignissimos quam iusto deserunt molestiae tempore distinctio quisquam nam sed cumque similique, vitae et eligendi omnis. Accusamus.",
+        "image": "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "link": "dolor sit - https://github.com/JgeovanniAm/RedRatCode"
+    },
+    {
+        "title": "Dolor sit",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, labore earum, possimus ea dignissimos quam iusto deserunt molestiae tempore distinctio quisquam nam sed cumque similique, vitae et eligendi omnis. Accusamus.",
+        "image": "https://images.pexels.com/photos/1569076/pexels-photo-1569076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "link": "dolor sit - https://github.com/JgeovanniAm/RedRatCode"
+    },
+    {
+        "title": "Amet consectetur",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, labore earum, possimus ea dignissimos quam iusto deserunt molestiae tempore distinctio quisquam nam sed cumque similique, vitae et eligendi omnis. Accusamus.",
+        "image": "https://images.pexels.com/photos/1004665/pexels-photo-1004665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "link": "dolor sit - https://github.com/JgeovanniAm/RedRatCode"
+    }
+]
