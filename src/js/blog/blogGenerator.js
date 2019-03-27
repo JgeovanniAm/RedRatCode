@@ -8,7 +8,8 @@ const generate = function(array, parent) {
   function elements() {
     array.forEach(o => {
       if (o.title) {
-        append('h3', o.title);
+        let title = append('h3', o.title);
+        title.id = o.title.replace(/ /gi, '');
       }
       if (o.image) {
         append('i').style.setProperty('background-image', `url(${o.image})`);
