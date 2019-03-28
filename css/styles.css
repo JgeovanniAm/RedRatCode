@@ -28,13 +28,13 @@ body {
       font-size: 30px; } }
 
 .show-proyect {
-  background-color: #138504;
+  background-color: black;
   position: relative;
   height: 150vh;
   overflow: hidden; }
   @media (max-width: 576px) {
     .show-proyect {
-      height: 80vh; } }
+      height: 90vh; } }
 
 .show-proyect_title {
   color: white;

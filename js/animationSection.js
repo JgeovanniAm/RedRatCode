@@ -1,10 +1,9 @@
 function AnimateSection() {
   const list_subtitle = document.querySelector('.list-subtitle');
-  const list_members = document.querySelector('.list-members');
   const title = document.querySelector('.title-js');
   const html = document.querySelector('html');
   let topHtml = html.scrollTop;
-  let array = [title, list_subtitle, list_members];
+  let array = [title, list_subtitle];
 
   for (let item = 0; item < array.length; item++) {
     let topitem = array[item].offsetTop;
@@ -14,10 +13,10 @@ function AnimateSection() {
     array[item].style.transition = '0.3s  ease-in-out';
 
     if (topHtml >= topitem + 200) {
-      array[item].style.opacity = 0.9;
+      array[item].style.opacity = 1;
       array[item].style.position = 'absolute';
       array[item].style.top = '15%';
-      array[item].style.transition = '1.5s  ease-in-out';
+      array[item].style.transition = '1.4s  ease-in-out';
 
       if (topHtml > topitem + 800) {
         array[item].style.opacity = 0;
