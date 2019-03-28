@@ -18,7 +18,7 @@ function AnimateSection() {
       array[item].style.top = '15%';
       array[item].style.transition = '1.4s  ease-in-out';
 
-      if (topHtml > topitem + 800) {
+      if (topHtml > topitem + 1100) {
         array[item].style.opacity = 0;
         array[item].style.position = 'absolute';
         array[item].style.transition = '2s  ease-in-out';
