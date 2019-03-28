@@ -1,8 +1,11 @@
 .show-proyect{
     background-color: rgb(19, 133, 4);
     position: relative;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
+    @media (max-width:576px){
+        height: 80vh;
+    }
 }
 .show-proyect_title{
     color:white;
@@ -20,14 +23,13 @@
     @media (max-width:576px){
         font-size: 30px;
         letter-spacing: 1px;
-
     }
 }
 .list-subtitle{
     position: absolute;
     list-style: none;
     margin: 0;
-    padding: 25% 0 0 0;
+    padding: 15% 0 0 0;
     width: 100%;
     font-family: 'Raleway', sans-serif;
     top: 90%;
@@ -35,11 +37,19 @@
     left: 0;
     opacity: 0;
     right: 0;
+    @media (max-width:576px){
+        padding: 25% 0 0 0;
+    }
 }
 .item{
     color:white;
     letter-spacing: 8px;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    margin-bottom:30px;
+    font-size: 50px;
+    margin-bottom:60px;
+    @media (max-width:576px){
+        font-size: 20px;
+        margin-bottom:30px;
+        letter-spacing: 1px;
+    }
 }

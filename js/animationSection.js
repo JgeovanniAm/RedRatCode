@@ -5,17 +5,20 @@ function AnimateSection() {
   const html = document.querySelector('html');
   let topHtml = html.scrollTop;
   let array = [title, list_subtitle, list_members];
+
   for (let item = 0; item < array.length; item++) {
     let topitem = array[item].offsetTop;
     array[item].style.opacity = 0;
     array[item].style.position = 'absolute';
     array[item].style.top = '30%';
     array[item].style.transition = '0.3s  ease-in-out';
+
     if (topHtml >= topitem + 200) {
       array[item].style.opacity = 0.9;
       array[item].style.position = 'absolute';
       array[item].style.top = '15%';
       array[item].style.transition = '1.5s  ease-in-out';
+
       if (topHtml > topitem + 800) {
         array[item].style.opacity = 0;
         array[item].style.position = 'absolute';
@@ -24,4 +27,5 @@ function AnimateSection() {
     }
   }
 }
+
 document.addEventListener('scroll', AnimateSection)

@@ -1,10 +1,12 @@
 const generate = function(array, parent) {
+
   function append(elementStr, inner) {
     let element = document.createElement(elementStr);
     element.innerText = inner || '';
     parent.appendChild(element);
     return element;
   }
+
   function elements() {
     array.forEach(o => {
       if (o.title) {
@@ -27,7 +29,9 @@ const generate = function(array, parent) {
         anchor.setAttribute('target', '_blank');
       }
     });
+
   }
+  
   return {
     elements: elements
   };

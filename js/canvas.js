@@ -1,4 +1,5 @@
 const canvasAnimation = (function () {
+	
 	const canvas = document.querySelector('.contex-js');
 	const canvasContext = canvas.getContext('2d');
 	
@@ -6,8 +7,10 @@ const canvasAnimation = (function () {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 	}
+
 	window.addEventListener('resize', setSize)
 	setSize();
+
 	class object {
 		constructor(x, y, r) {
 			this.x = x;
@@ -48,12 +51,14 @@ const canvasAnimation = (function () {
 
 	function create() {
 		let array = [];
+
 		for (let i = 0; i < 10; i++) {
 			let x = Math.random() *  canvas.width;
 			let y = Math.random() *  canvas.height;
 			let character = new object(x, y, 5);
 			array.push(character);
 		}
+
 		return item = array;
 	}
 	let newarray = create();
