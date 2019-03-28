@@ -19,7 +19,7 @@ const canvasAnimation = (function () {
 		draw() {
 			canvasContext.beginPath()
 			canvasContext.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
-			canvasContext.fillStyle = "red";
+			canvasContext.fillStyle = "green";
 			canvasContext.fill();
 			canvasContext.closePath();
 		}
@@ -30,7 +30,7 @@ const canvasAnimation = (function () {
 				canvasContext.globalAlpha = 0.25;
 				canvasContext.moveTo(this.x,this.y);
 				canvasContext.lineTo(array[index].x,array[index].y);
-				canvasContext.strokeStyle = 'green';
+				canvasContext.strokeStyle = 'red';
 				canvasContext.stroke()
 				canvasContext.closePath();
 			}
