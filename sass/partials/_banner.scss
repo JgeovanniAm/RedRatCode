@@ -24,8 +24,11 @@ body{
     text-align: center;
     color: white;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 0;
     right: 0;
+    @media (max-width:576px){
+        font-size: 30px;
+    }
 }
 
