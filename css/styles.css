@@ -6,8 +6,7 @@ body {
   overflow: hidden; }
 
 .banner-main {
-  background-color: #f0f0f0;
-  height: 100vh; }
+  background-color: black; }
 
 .canvas-ui {
   background-color: black; }
