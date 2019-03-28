@@ -1,0 +1,52 @@
+.show-proyect{
+    background-color: rgb(19, 133, 4);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.show-proyect_title{
+    color:white;
+    position: absolute;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    top: 90%;
+    letter-spacing: 5px;
+    text-align: center;
+    opacity: 0;
+    left: 0;
+    right: 0;
+}
+.list-subtitle{
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 20% 0 0 0;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    top: 90%;
+    text-align: center;
+    left: 0;
+    opacity: 0;
+    right: 0;
+}
+.list-members{
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 20% 0 0 0;
+    width: 90%;
+    font-family: 'Raleway', sans-serif;
+    top: 60%;
+    text-align: center;
+    left: 0;
+    opacity: 0;
+    right: 0;
+}
+.item{
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    margin-bottom:30px;
+}

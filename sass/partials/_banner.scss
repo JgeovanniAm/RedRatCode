@@ -2,11 +2,28 @@ body{
     margin:0;
     padding:0;
 }
+
 .wraper{
-    width: 100%;
+    overflow: hidden;
 }
+
 .banner-main{
     background-color:#f0f0f0;
-    box-shadow: 0px 0px 15px black;
-    width: 100%;
+    height: 100vh;
 }
+
+.canvas-ui{
+    background-color: black;
+}
+
+.title_banner-main{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+

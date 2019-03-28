@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>R.R.R</title>
 </head>
 <body>
   <div class="wraper">
     <section class="banner-main">
+        <h1 class="title_banner-main">Racing Red Rats</h1>
       <canvas class="canvas-ui contex-js"></canvas>
-      <img class="logo-RRR" src="" alt="this is a logo RRR">
     </section>
     <section class="show-proyect">
-      <h1 class="title">design thinking</h1>
+      <div class="wraper-title">
+          <h1 class="show-proyect_title title-js">design thinking</h1>
+      </div>
       <ul class="list-subtitle">
         <li class="item">Problematica</li>
         <li class="item">investigación</li>
@@ -28,11 +32,15 @@
         <li class="item">Luis Murillo</li>
       </ul>
     </section>
-    <section class="blog-experience">
-
+    <section class="blogSection">
+      <nav class="blogSection__navigation"></nav>
+      <div class="blogSection__wrapper"></div>
     </section>
   </div>
-  <script src="js/main.js"></script>
-  <!--<script src="js/blogGenerator.js"></script>-->
+  <script src="js/animationSection.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/blogGenerator.js"></script>
+  <script src="js/fetchJSON.js"></script>
+  <script src="js/renderBlog.js"></script>
 </body>
 </html>

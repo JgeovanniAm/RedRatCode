@@ -1,6 +1,7 @@
 const canvasAnimation = (function () {
 	const canvas = document.querySelector('.contex-js');
 	const canvasContext = canvas.getContext('2d');
+	
 	function setSize() {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
@@ -18,11 +19,21 @@ const canvasAnimation = (function () {
 		draw() {
 			canvasContext.beginPath()
 			canvasContext.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
-			canvasContext.fillStyle = "#014a74";
+			canvasContext.fillStyle = "red";
 			canvasContext.fill();
 			canvasContext.closePath();
 		}
-		move() {
+		//array of create item circle
+		move( array = []) {
+			for (let index = 0; index < array.length; index++) {
+				canvasContext.beginPath();
+				canvasContext.globalAlpha = 0.25;
+				canvasContext.moveTo(this.x,this.y);
+				canvasContext.lineTo(array[index].x,array[index].y);
+				canvasContext.strokeStyle = 'green';
+				canvasContext.stroke()
+				canvasContext.closePath();
+			}
 			if (this.y + this.r > canvas.height || this.y - this.r <0) {
 				this.dy = -this.dy
 			}
@@ -37,10 +48,10 @@ const canvasAnimation = (function () {
 
 	function create() {
 		let array = [];
-		for (let i = 0; i < 4; i++) {
+		for (let i = 0; i < 10; i++) {
 			let x = Math.random() *  canvas.width;
 			let y = Math.random() *  canvas.height;
-			let character = new object(x, y, 50);
+			let character = new object(x, y, 5);
 			array.push(character);
 		}
 		return item = array;
@@ -50,9 +61,8 @@ const canvasAnimation = (function () {
 	function IteracionDraw() {
 		requestAnimationFrame(IteracionDraw)
 		canvasContext.clearRect(0, 0, canvas.width, canvas.height);
-		let i = 0;
 		newarray.forEach(element => {
-			element.move();
+			element.move(newarray);
 		});
 	}
 	IteracionDraw()
