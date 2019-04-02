@@ -1,3 +1,10 @@
+.blogSection{
+  background: black;
+}
+.blogSection__title{
+  color: white;
+  margin: 0;
+}
 .blogSection__wrapper {
   width: 100%;
   display: block;
@@ -12,7 +19,7 @@
     letter-spacing: 1px;
   }
   h3{
-    color: #333;
+    color: white;
   }
   i {
     width: 100%;
@@ -22,7 +29,7 @@
     background-attachment: fixed;
     background-position: center;
     display: block;
-    box-shadow: inset 0 -100px 100px -100px #fff;
+    box-shadow: inset 0 -100px 100px -100px #666;
   }
   h3 {
     font-family: 'Poppins', sans-serif;
@@ -32,7 +39,7 @@
   }
   p {
     line-height: 1.75;
-    color: #666;
+    color: #fff;
   }
 }
 body {
