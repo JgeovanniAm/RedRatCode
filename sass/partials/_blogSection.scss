@@ -1,9 +1,36 @@
 .blogSection{
   background: black;
+  padding-top: 20%;
+}
+.blogSection__navigation{
+  padding-top: 150px;
+  @media (max-width:576px){
+    padding-top: 50px;
+}
 }
 .blogSection__title{
   color: white;
   margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  @media (max-width:576px){
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+}
+
+.title-members{
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color:white;
+  @media (max-width:576px){
+    font-size: 1rem;
+    margin: 15px;
+    letter-spacing: 1px;
+}
 }
 .blogSection__wrapper {
   width: 100%;
@@ -12,14 +39,26 @@
   padding: 0 20px;
   padding-bottom: 100px;
   margin: 0 auto;
+  @media (max-width:576px){
+    width: 95%;
+}
   a,
   p {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 21px;
     letter-spacing: 1px;
+    line-height: 1.75;
+    color: #fff;
+    @media (max-width:576px){
+      font-size: 16px;
+  }
   }
   h3{
     color: white;
+    @media (max-width:576px){
+      font-size: 16px;
+      padding:10px;
+  }
   }
   i {
     width: 100%;
@@ -30,18 +69,26 @@
     background-position: center;
     display: block;
     box-shadow: inset 0 -100px 100px -100px #666;
+    @media (max-width:576px){
+      width: 95%;
+      height: 260px;
+  }
   }
   h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 38px;
     margin: 0;
     padding-top: 80px;
   }
-  p {
-    line-height: 1.75;
-    color: #fff;
-  }
+  
 }
 body {
+  font-family: 'Raleway', sans-serif;
   margin: 0;
+  background-color: black;
+  a{
+    text-decoration: none;
+    color: red;
+    opacity: 0.7;
+  }
 }

@@ -9,7 +9,7 @@ function AnimateSection() {
     let topitem = array[item].offsetTop;
     array[item].style.opacity = 0;
     array[item].style.position = 'absolute';
-    array[item].style.top = '30%';
+    array[item].style.top = '25%';
     array[item].style.transition = '0.3s  ease-in-out';
 
     if (topHtml >= topitem + 200) {

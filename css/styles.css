@@ -29,8 +29,9 @@ body {
 .show-proyect {
   background-color: black;
   position: relative;
-  height: 150vh;
-  overflow: hidden; }
+  height: 450vh;
+  overflow: hidden;
+  border: 0px; }
   @media (max-width: 576px) {
     .show-proyect {
       height: 90vh; } }
@@ -42,7 +43,7 @@ body {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 80px;
-  top: 90%;
+  top: 80%;
   letter-spacing: 8px;
   text-align: center;
   opacity: 0;
@@ -82,11 +83,37 @@ body {
       letter-spacing: 1px; } }
 
 .blogSection {
-  background: black; }
+  background: black;
+  padding-top: 20%; }
+
+.blogSection__navigation {
+  padding-top: 150px; }
+  @media (max-width: 576px) {
+    .blogSection__navigation {
+      padding-top: 50px; } }
 
 .blogSection__title {
   color: white;
-  margin: 0; }
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center; }
+  @media (max-width: 576px) {
+    .blogSection__title {
+      font-size: 1.4rem;
+      letter-spacing: 1px; } }
+
+.title-members {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+  @media (max-width: 576px) {
+    .title-members {
+      font-size: 1rem;
+      margin: 15px;
+      letter-spacing: 1px; } }
 
 .blogSection__wrapper {
   width: 100%;
@@ -95,13 +122,26 @@ body {
   padding: 0 20px;
   padding-bottom: 100px;
   margin: 0 auto; }
+  @media (max-width: 576px) {
+    .blogSection__wrapper {
+      width: 95%; } }
   .blogSection__wrapper a,
   .blogSection__wrapper p {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 21px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    line-height: 1.75;
+    color: #fff; }
+    @media (max-width: 576px) {
+      .blogSection__wrapper a,
+      .blogSection__wrapper p {
+        font-size: 16px; } }
   .blogSection__wrapper h3 {
     color: white; }
+    @media (max-width: 576px) {
+      .blogSection__wrapper h3 {
+        font-size: 16px;
+        padding: 10px; } }
   .blogSection__wrapper i {
     width: 100%;
     height: 360px;
@@ -111,16 +151,23 @@ body {
     background-position: center;
     display: block;
     box-shadow: inset 0 -100px 100px -100px #666; }
+    @media (max-width: 576px) {
+      .blogSection__wrapper i {
+        width: 95%;
+        height: 260px; } }
   .blogSection__wrapper h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 38px;
     margin: 0;
     padding-top: 80px; }
-  .blogSection__wrapper p {
-    line-height: 1.75;
-    color: #fff; }
 
 body {
-  margin: 0; }
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: black; }
+  body a {
+    text-decoration: none;
+    color: red;
+    opacity: 0.7; }
 
 /*# sourceMappingURL=styles.css.map */

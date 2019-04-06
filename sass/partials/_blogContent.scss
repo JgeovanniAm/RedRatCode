@@ -1,8 +1,9 @@
 .show-proyect{
     background-color: black;;
     position: relative;
-    height: 150vh;
+    height: 450vh;
     overflow: hidden;
+    border: 0px;
     @media (max-width:576px){
         height: 90vh;
     }
@@ -14,7 +15,7 @@
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 80px;
-    top: 90%;
+    top: 80%;
     letter-spacing: 8px;
     text-align: center;
     opacity: 0;
